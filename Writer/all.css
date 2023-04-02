@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: cornflowerblue;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*start header*/
+header {
+    background: none;
+    width: 100%;
+    position:static;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 250px;
+}
+
+.logo {
+    margin-top: 10px;
+    width: 10%;
+    transition: 0.4s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.navigation a {
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+    font-size: 1.3em;
+    padding-left: 30px;
+    transition: 0.5s ease;
+}
+
+.navigation a:hover {
+    color:burlywood;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 100px 200px;
+}
+/*end header*/
+
+/*start projects*/
+section {
+    padding: 100px 200px;
+}
+
+.projects .content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 10px solid #fff;
+    min-height: 14em;
+    height: 1050px;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+    box-shadow: 0 2px 25px rgba(1 1 1 / 15%);
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card:hover .project-image{
+    opacity: 0.9;
+}
+
+.project-image img{
+    width: 100%;
+    height: 250px;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.projects .title {
+    display: flex;
+    justify-content: center;
+    color: crimson;
+    font-weight: 800;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*end projects*/
+
+/*start footer*/
+.footer {
+    background-color:cornflowerblue;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: crimson;
+}
+
+.social-icons a{
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: 0.7s ease;
+}
+
+.social-icons a:hover {
+    color: crimson;
+}
+/*end footer*/
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+    
+    .profile-img {
+        display: none;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        background-color:brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    header .logo a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation a {
+        display: none;
+    }
+    .main {
+        flex-direction: row;
+    }
+    body {
+        background: cornflowerblue;
+        font-size: 12px;
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+    .main-btn{
+        margin: auto;
+        width: 40%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .about {
+        background: cadetblue;
+    }
+    .project-card {
+        height: 860px;
+    }
+    .projects .read-btn {
+        margin:auto;
+        width: 50%;
+    }
+    .contact {
+        background: cadetblue;
+    }
+}
